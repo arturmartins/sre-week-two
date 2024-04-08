@@ -15,7 +15,7 @@ kubectl -n sre events  --types=Warning --for=Pod/${POD_NAME}
 ``` 
 kubectl get nodes minikube  -o custom-columns="CPU:.status.allocatable.cpu"
 ```
-Adjust the deployment from 4 to 1 accordingly.
+Adjust the deployment from 10 to 1 accordingly.
 
 ```
 kubectl  apply -f deployment.yml -n sre
